@@ -1,4 +1,6 @@
 $(document).ready(function() {
+
+	$(".project-description").css("visibility", "visible");
 	$("#project1").click(function() {
 		$(".project-description").css("visibility", "visible");
 		$(".project-description").css("z-index", "900");
