@@ -1,0 +1,161 @@
+body {
+	background-color: #b3cde0;
+	font-family: 'Oswald', sans-serif;
+}
+a {
+	text-decoration: none;
+}
+/* topbar */
+#topbar {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	height: 50px;
+	background-color: #011f4b;
+	z-index: 100;
+}
+
+.menu {
+	display: inline-block;
+	margin:0;
+	padding:0;
+	width:100%;
+	height:100%;
+	text-align: center;
+	list-style-type:none;
+	overflow:hidden;
+	position:absolute;
+}
+.menu li {
+	width:25%;
+}
+.sub-menu {
+	position:absolute;
+	margin:0;
+	padding:0;
+	list-style-type:none;
+	background-color:rgba(0,0,0,0.8);
+	visibility:hidden;
+}
+.menu-item {
+	float:left;
+	width: 20%;
+	height: 100%;
+	position: relative;
+}
+.menu-item a {
+	padding:5% 20px;
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	display:block;
+}
+.menu::after { /* Clearfix */
+	clear: both;
+}
+
+/* title body */
+.title-container {
+	width:100%;
+	position:absolute;
+	margin-top: 50px;
+	height: 800px;
+}
+#name {
+	position:relative;
+	top:50px;
+	height: 200px;
+}
+svg {
+	position:relative;
+	margin-left: 50%;
+	transform: translateX(-50%);
+	width: 600px;
+}
+path {
+	stroke-dasharray: 1530px;
+	stroke-dashoffset: 1530px;
+	animation: dash 3s ease-in-out forwards;
+}
+@keyframes dash {
+	to {
+		stroke-dashoffset: 0;
+		opacity: 1;
+	}
+}
+#more-button {
+	position: absolute;
+	margin-left: 50%;
+	transform:translateX(-50%);
+	margin-top: 100px;
+	height: 50px;
+	width: 150px;
+	background-color: #005b96;
+	border-color: white;
+	border-radius: 10px;
+}
+#more-button a {
+	color: white;
+	text-align:center;
+	position:absolute;
+	left: 50%;
+	width:100%;
+	top: 10%;
+	transform:translateX(-50%);
+	font-size: 1.5em;
+	padding: 2px;
+}
+
+
+
+/* ABOUT */
+
+.title {
+	position: relative;
+    font-size: 100px;
+    left: 25%;
+    display: inline-block;
+    transform: translateX(-50%);
+}
+#profpic {
+	position: relative;
+    top: 150px;
+    float: left;
+    height: 500px;
+    -ms-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+#info {
+	position: relative;
+	margin-right:0px;
+	margin-left:700px;
+	width: 60%;
+	font-size: 3em;
+	clear: both;
+	top:-300px;
+}
+#info ul {
+	list-style: none;
+	right: 0;
+	clear:left;
+}
+
+
+
+/* Projects */
+
+#title-project {
+	position: absolute;
+    font-size: 100px;
+    left: 50%;
+    text-align: center;
+    display: inline-block;
+    transform: translateX(-50%);
+}
+
+#projects {
+	position: relative;
+	top: 200px;
+	height: ;
+}
