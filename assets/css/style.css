@@ -245,3 +245,21 @@ path {
 	font-size: 2em;
 	cursor: pointer;
 }
+
+#infoContact {
+    position: absolute;
+    top: 180px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.contact{
+	margin: 2em;
+	list-style: none;
+}
+.contact-address {
+	margin-left: 2em;
+}
+.contact-address-tab {
+	margin-left: 6em;
+}
